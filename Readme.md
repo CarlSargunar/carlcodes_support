@@ -5,4 +5,4 @@ This repository contains code used in support of my website as well as experimen
 
 **Table of Contents**
 
-1. [Benchmarking the Raspberry Pi with .net 5](1_Benchmarking_RPi_net5/Readme.md)
+1. [Overclocking and Benchmarking the Raspberry Pi with .net 5](1_Benchmarking_RPi_net5/Readme.md)
