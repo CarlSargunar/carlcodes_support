@@ -1,18 +1,25 @@
 ﻿using System;
-using Benchmark.Benchmarks;
+using MyBenchmarks.Benchmarks;
 using BenchmarkDotNet.Attributes;
 
-namespace Benchmark
+namespace MyBenchmarks
 {
     class Program
     {
         static void Main(string[] args)
         {
             WriteLine("Starting Benchmarking Process");
-            
-            [Benchmark]
-            BubbleSort.Sort
+
+
+            WriteLine("Bubble Sort");
+            BubbleSort.DoBenchmark(500);
+
+
+
+            WriteLine("Complete");
         }
+
+
 
 
         private static void WriteLine(string msg)
