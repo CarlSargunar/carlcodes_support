@@ -15,9 +15,9 @@ namespace MyBenchmarks
             #endregion
 
             
-            var loops = 1000;
+            var loops = 10000;
 
-            WriteLine("Starting Benchmarking Process");
+            WriteLine("Starting Benchmarking Process : {loops} iteration(s) per test");
 
             WriteLine("Bubble Sort an array of 1000 integers");
             bubbleSort.DoBenchmark(loops);
