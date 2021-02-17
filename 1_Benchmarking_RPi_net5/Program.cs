@@ -1,23 +1,23 @@
 ﻿using System;
 using Benchmark.Benchmarks;
+using BenchmarkDotNet.Attributes;
 
 namespace Benchmark
 {
     class Program
     {
-        // Benchmarks
-        BubbleSort bubbleSort = new BubbleSort();
-
-
         static void Main(string[] args)
         {
             WriteLine("Starting Benchmarking Process");
+            
+            [Benchmark]
+            BubbleSort.Sort
         }
 
 
-        private static void WriteLine(string msg);
+        private static void WriteLine(string msg)
         {
-            Console.WriteLine($" : {msg}");
+            Console.WriteLine($"{DateTime.Now} : {msg}");
         }
     }
 }

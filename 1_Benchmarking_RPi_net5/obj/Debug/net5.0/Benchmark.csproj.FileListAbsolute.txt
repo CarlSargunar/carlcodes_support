@@ -1,0 +1,5 @@
+C:\Work\Personal\carlcodes_support\1_Benchmarking_RPi_net5\obj\Debug\net5.0\Benchmark.csprojAssemblyReference.cache
+C:\Work\Personal\carlcodes_support\1_Benchmarking_RPi_net5\obj\Debug\net5.0\Benchmark.GeneratedMSBuildEditorConfig.editorconfig
+C:\Work\Personal\carlcodes_support\1_Benchmarking_RPi_net5\obj\Debug\net5.0\Benchmark.AssemblyInfoInputs.cache
+C:\Work\Personal\carlcodes_support\1_Benchmarking_RPi_net5\obj\Debug\net5.0\Benchmark.AssemblyInfo.cs
+C:\Work\Personal\carlcodes_support\1_Benchmarking_RPi_net5\obj\Debug\net5.0\Benchmark.csproj.CoreCompileInputs.cache
