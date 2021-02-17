@@ -10,11 +10,9 @@ namespace MyBenchmarks
         {
             WriteLine("Starting Benchmarking Process");
 
-
             WriteLine("Bubble Sort");
-            BubbleSort.DoBenchmark(500);
-
-
+            BubbleSort.DoBenchmark(100000);
+            
 
             WriteLine("Complete");
         }
