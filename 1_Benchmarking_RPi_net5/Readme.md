@@ -20,7 +20,7 @@ Once you have dotnet running, please update + reboot your device
 
 ## References
 
-- Thanks to Pete Gallagher for his script to install .NET 5 on a raspberry Pi 
+- Thanks to Pete Gallagher for his script to install .NET 5 on a raspberry Pi - [https://www.petecodes.co.uk/install-and-use-microsoft-dot-net-5-with-the-raspberry-pi/](https://www.petecodes.co.uk/install-and-use-microsoft-dot-net-5-with-the-raspberry-pi/)
 - https://www.hanselman.com/blog/benchmarking-net-code
 
 ## Notes
