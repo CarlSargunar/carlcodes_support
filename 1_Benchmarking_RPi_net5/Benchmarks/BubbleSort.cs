@@ -4,16 +4,25 @@ using BenchmarkDotNet.Attributes;
 namespace MyBenchmarks.Benchmarks
 {
     [MemoryDiagnoser]
-    public class BubbleSort : IBenchmark
+    public class BubbleSort
     {
+
+        int _count = 1;
+
+
+        public BubbleSort(int count)
+        {
+            _count = count;
+        }
+
         [Benchmark]
-        public void DoBenchmark(int count = 1)
+        public void DoBenchmark()
         {
             Debug.WriteLine("Starting Bubblesort");
 
             // Sequence from 1 to 1000
             // Generated from https://www.random.org/sequences/
-            
+
             var input = new int[]
             {
                 717, 489, 853, 474, 251, 14, 205, 539, 432, 925, 613, 190, 575, 790, 732, 667, 468, 57, 387, 748, 786,
@@ -50,7 +59,7 @@ namespace MyBenchmarks.Benchmarks
                 435, 50, 38, 469, 121, 215, 189
             };
 
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < _count; i++)
             {
                 Debug.WriteLine($"Starting iteration : {i}");
                 var output = Sort(input);

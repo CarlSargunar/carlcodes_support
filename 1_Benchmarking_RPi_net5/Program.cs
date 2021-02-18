@@ -6,26 +6,19 @@ namespace MyBenchmarks
 {
     class Program
     {
+        int loops = 1000;
 
-
-        static void Main(string[] args)
+        void Main(string[] args)
         {
             #region Create Test instances
             var bubbleSort = new BubbleSort();
             #endregion
 
+        
+
+            WriteLine($"Starting Benchmarking Process : {loops} iteration(s) per test");
+            var summary = BenchmarkRunner.Run<bubbleSort>();
             
-            var loops = 10000;
-
-            WriteLine("Starting Benchmarking Process : {loops} iteration(s) per test");
-
-            WriteLine("Bubble Sort an array of 1000 integers");
-            var summary = BenchmarkRunner.Run<SingleVsFirst>();
-            
-            bubbleSort.DoBenchmark(loops);
-
-
-
 
             WriteLine("Complete");
         }
