@@ -18,6 +18,10 @@ Alternatively if you have cloned the repo and wish to install this locally
 
 Once you have dotnet running, please update + reboot your device
 
+## References
+
+- Thanks to Pete Gallagher for his script to install .NET 5 on a raspberry Pi 
+- https://www.hanselman.com/blog/benchmarking-net-code
 
 ## Notes
 

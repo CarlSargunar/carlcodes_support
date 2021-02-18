@@ -20,6 +20,8 @@ namespace MyBenchmarks
             WriteLine("Starting Benchmarking Process : {loops} iteration(s) per test");
 
             WriteLine("Bubble Sort an array of 1000 integers");
+            var summary = BenchmarkRunner.Run<SingleVsFirst>();
+            
             bubbleSort.DoBenchmark(loops);
 
 

@@ -1,9 +1,12 @@
 using System.Diagnostics;
+using BenchmarkDotNet.Attributes;
 
 namespace MyBenchmarks.Benchmarks
 {
+    [MemoryDiagnoser]
     public class BubbleSort : IBenchmark
     {
+        [Benchmark]
         public void DoBenchmark(int count = 1)
         {
             Debug.WriteLine("Starting Bubblesort");
