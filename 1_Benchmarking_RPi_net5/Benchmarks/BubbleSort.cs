@@ -6,25 +6,15 @@ namespace MyBenchmarks.Benchmarks
     [MemoryDiagnoser]
     public class BubbleSort
     {
+        private int[] data;
 
-        int _count = 1;
-
-
-        public BubbleSort(int count)
+        [GlobalSetup]
+        public void Setup()
         {
-            _count = count;
-        }
-
-        [Benchmark]
-        public void DoBenchmark()
-        {
-            Debug.WriteLine("Starting Bubblesort");
-
             // Sequence from 1 to 1000
             // Generated from https://www.random.org/sequences/
-
-            var input = new int[]
-            {
+            data = new int[]
+                {
                 717, 489, 853, 474, 251, 14, 205, 539, 432, 925, 613, 190, 575, 790, 732, 667, 468, 57, 387, 748, 786,
                 501, 213, 950, 48, 348, 518, 603, 410, 655, 828, 214, 840, 709, 859, 718, 747, 982, 659, 544, 542, 34,
                 883, 249, 447, 293, 114, 59, 891, 297, 815, 53, 308, 240, 29, 919, 527, 958, 254, 42, 593, 551, 847,
@@ -57,13 +47,13 @@ namespace MyBenchmarks.Benchmarks
                 781, 656, 935, 367, 967, 762, 835, 682, 614, 939, 694, 535, 530, 488, 880, 388, 884, 440, 774, 56, 889,
                 734, 632, 27, 378, 674, 32, 879, 663, 248, 616, 945, 623, 675, 100, 965, 601, 445, 731, 263, 874, 67,
                 435, 50, 38, 469, 121, 215, 189
-            };
+                };
+        }
 
-            for (int i = 0; i < _count; i++)
-            {
-                Debug.WriteLine($"Starting iteration : {i}");
-                var output = Sort(input);
-            }
+        [Benchmark]
+        public void DoBubbleSort()
+        {
+            var output = Sort(data);
         }
 
         private int[] Sort(int[] input)

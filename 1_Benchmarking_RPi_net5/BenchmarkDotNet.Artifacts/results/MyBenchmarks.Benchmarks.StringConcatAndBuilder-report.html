@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>MyBenchmarks.Benchmarks.StringConcatAndBuilder-20210220-003626</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.1, OS=macOS Catalina 10.15.7 (19H2) [Darwin 19.6.0]
+Intel Core i7-4770HQ CPU 2.20GHz (Haswell), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=5.0.103
+  [Host]     : .NET Core 5.0.3 (CoreCLR 5.0.321.7212, CoreFX 5.0.321.7212), X64 RyuJIT
+  DefaultJob : .NET Core 5.0.3 (CoreCLR 5.0.321.7212, CoreFX 5.0.321.7212), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th> Method</th><th>Loops</th><th> Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>StringConcat</td><td>5</td><td>99.03 ns</td><td>0.436 ns</td><td>0.386 ns</td>
+</tr><tr><td>StringBuilder</td><td>5</td><td>77.59 ns</td><td>0.372 ns</td><td>0.311 ns</td>
+</tr><tr><td>StringConcat</td><td>10</td><td>236.35 ns</td><td>4.803 ns</td><td>6.412 ns</td>
+</tr><tr><td>StringBuilder</td><td>10</td><td>131.70 ns</td><td>1.168 ns</td><td>1.092 ns</td>
+</tr><tr><td>StringConcat</td><td>50</td><td>1,938.21 ns</td><td>7.648 ns</td><td>7.154 ns</td>
+</tr><tr><td>StringBuilder</td><td>50</td><td>1,115.92 ns</td><td>8.334 ns</td><td>7.388 ns</td>
+</tr><tr><td>StringConcat</td><td>100</td><td>4,784.43 ns</td><td>28.921 ns</td><td>24.150 ns</td>
+</tr><tr><td>StringBuilder</td><td>100</td><td>2,070.07 ns</td><td>10.762 ns</td><td>9.540 ns</td>
+</tr></tbody></table>
+</body>
+</html>

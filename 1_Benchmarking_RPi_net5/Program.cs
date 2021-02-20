@@ -1,6 +1,7 @@
 ﻿using System;
 using MyBenchmarks.Benchmarks;
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
 
 namespace MyBenchmarks
 {
@@ -8,16 +9,18 @@ namespace MyBenchmarks
     {
         int loops = 1000;
 
-        void Main(string[] args)
+        static void Main(string[] args)
         {
-            #region Create Test instances
-            var bubbleSort = new BubbleSort();
-            #endregion
+            // #region Create Test instances
+            // var bubbleSort = new BubbleSort();
+            // #endregion
 
-        
+            var summary = BenchmarkRunner.Run<StringConcatAndBuilder>();        
+            var summary2 = BenchmarkRunner.Run<Md5VsSha256>();        
+            var summary3 = BenchmarkRunner.Run<BubbleSort>();        
 
-            WriteLine($"Starting Benchmarking Process : {loops} iteration(s) per test");
-            var summary = BenchmarkRunner.Run<bubbleSort>();
+            // WriteLine($"Starting Benchmarking Process : {loops} iteration(s) per test");
+            // var summary = BenchmarkRunner.Run<bubbleSort>();
             
 
             WriteLine("Complete");

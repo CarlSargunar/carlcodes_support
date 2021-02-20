@@ -5,7 +5,7 @@ namespace MyBenchmarks.Benchmarks
 {
     public class StringConcatAndBuilder
     {
-        [Params(1, 5, 10, 50, 100, 500)]
+        [Params(5, 10, 50, 100)]
         public int Loops;
 
         [Benchmark]
