@@ -2,7 +2,7 @@ using System;
 
 namespace MyBenchmarks.Benchmarks
 {
-    public class Fractal : IBenchmark
+    public class Fractal
     {
         public void DoBenchmark(int count = 1)
         {

@@ -10,11 +10,11 @@ Intel Core i7-4770HQ CPU 2.20GHz (Haswell), 1 CPU, 8 logical and 4 physical core
 ```
 |        Method | Loops |        Mean |     Error |    StdDev |
 |-------------- |------ |------------:|----------:|----------:|
-|  **StringConcat** |     **5** |    **99.03 ns** |  **0.436 ns** |  **0.386 ns** |
-| StringBuilder |     5 |    77.59 ns |  0.372 ns |  0.311 ns |
-|  **StringConcat** |    **10** |   **236.35 ns** |  **4.803 ns** |  **6.412 ns** |
-| StringBuilder |    10 |   131.70 ns |  1.168 ns |  1.092 ns |
-|  **StringConcat** |    **50** | **1,938.21 ns** |  **7.648 ns** |  **7.154 ns** |
-| StringBuilder |    50 | 1,115.92 ns |  8.334 ns |  7.388 ns |
-|  **StringConcat** |   **100** | **4,784.43 ns** | **28.921 ns** | **24.150 ns** |
-| StringBuilder |   100 | 2,070.07 ns | 10.762 ns |  9.540 ns |
+|  **StringConcat** |     **5** |    **98.10 ns** |  **0.630 ns** |  **0.590 ns** |
+| StringBuilder |     5 |    76.30 ns |  0.535 ns |  0.500 ns |
+|  **StringConcat** |    **10** |   **223.90 ns** |  **1.084 ns** |  **0.905 ns** |
+| StringBuilder |    10 |   129.26 ns |  0.649 ns |  0.507 ns |
+|  **StringConcat** |    **50** | **1,928.36 ns** | **24.430 ns** | **22.852 ns** |
+| StringBuilder |    50 | 1,056.87 ns |  3.318 ns |  2.770 ns |
+|  **StringConcat** |   **100** | **4,747.72 ns** | **26.385 ns** | **22.033 ns** |
+| StringBuilder |   100 | 2,094.15 ns | 12.288 ns | 11.494 ns |

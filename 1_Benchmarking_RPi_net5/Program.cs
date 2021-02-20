@@ -11,17 +11,10 @@ namespace MyBenchmarks
 
         static void Main(string[] args)
         {
-            // #region Create Test instances
-            // var bubbleSort = new BubbleSort();
-            // #endregion
 
-            var summary = BenchmarkRunner.Run<StringConcatAndBuilder>();        
-            var summary2 = BenchmarkRunner.Run<Md5VsSha256>();        
-            var summary3 = BenchmarkRunner.Run<BubbleSort>();        
-
-            // WriteLine($"Starting Benchmarking Process : {loops} iteration(s) per test");
-            // var summary = BenchmarkRunner.Run<bubbleSort>();
-            
+            BenchmarkRunner.Run<StringConcatAndBuilder>();        
+            BenchmarkRunner.Run<Md5VsSha256>();        
+            BenchmarkRunner.Run<BubbleSort>();      
 
             WriteLine("Complete");
         }
