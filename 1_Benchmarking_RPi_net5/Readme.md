@@ -18,6 +18,13 @@ Alternatively if you have cloned the repo and wish to install this locally
 
 Once you have dotnet running, please update + reboot your device
 
+
+## To Run Live
+
+dotnet build
+dotnet run --configuration Release
+
+
 ## References
 
 - Thanks to Pete Gallagher for his script to install .NET 5 on a raspberry Pi - [https://www.petecodes.co.uk/install-and-use-microsoft-dot-net-5-with-the-raspberry-pi/](https://www.petecodes.co.uk/install-and-use-microsoft-dot-net-5-with-the-raspberry-pi/)
