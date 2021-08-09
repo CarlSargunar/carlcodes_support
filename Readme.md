@@ -5,5 +5,5 @@ This repository contains code used in support of my website as well as experimen
 
 **Table of Contents**
 
-1. [WIP] - [Overclocking and Benchmarking the Raspberry Pi with .net 5](1_Benchmarking_RPi_net5/Readme.md)
-2. Javascript : URLSearchParams - Querystring API in Javascript
+1. [WIP] - [Overclocking and Benchmarking the Raspberry Pi with .net 5](RaspberryPi/1_Benchmarking_RPi_net5/Readme.md)
+2. [Javascript : URLSearchParams - Querystring API in Javascript](Javascript/2_URLSearchParams-Querystring_API_in_Javascript.html)
